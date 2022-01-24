@@ -2,7 +2,7 @@
     ViewData["Title"] = "Página Inicial";
 }
 
-<div class="blackBg" style="transition:.15s;position: absolute;top: 8vh: 100vw;height: 86vh;background-color: rgba(0,0,0,.9);">
+<div class="blackBg" style="transition:.15s;position: absolute;top: 8vh: 100vw;height: 86vh;background-color: rgba(0,0,0,.75);">
       <img  class="webpic-sm" src="~/images/wallpaper.png" />     
       <img  class="webpic-md" src="~/images/WebPic-MD.jpg" />    
 
@@ -11,8 +11,18 @@
         <div class="text-center ">
             <h1 class="display-4">Seja bem-vindo!</h1>
             <p>  Aqui você poderá realizar o acesso às telas de Cadastro, Alteração e Exclusão de Usuários!!</p>
-            <p>  ASP.NET MVC 5</p>
-            <p>  DB MySQL using EntityFramework 6</p>
+                
+            <a class="btn btn-primary" asp-controller="Contato" asp-action="Index">Acessar Lista de Contatos</a>
+
+            <hr style="height: 1px; background-color:white;width: 100%;margin-top: 30px;margin-bottom: 30px;"/>
+                <p> • EntityFramework 6  </p>
+                <p> • EF.Design;EFCore;EF.Tools;EF.SQLServer  </p>              
+                <p> • DB SQLServer Management Studio 18</p>
+                <p> • ASP.NET MVC 5;</p>
+                <p> • NetFramework Version: 5.0.0</p>
+                <p style="background-color: white;color:black"> • Access to DB ConnectionString: appsettings.json </p>
+            <hr style="height: 1px; background-color:white;width: 100%;margin-bottom: 30px;margin-top: 30px;"/>
+
             <p> Have a good stay!!</p>
         </div>
 
