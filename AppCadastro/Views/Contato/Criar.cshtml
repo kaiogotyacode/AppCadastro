@@ -1,0 +1,35 @@
+﻿@model ContatoModel
+@{
+    ViewData["Title"] = "Novo Cadastro";
+}
+
+<style>
+    body{
+        background-color: rgba(0,0,0,.9);
+    }
+</style>
+
+<div class="container  text-light">
+    
+<h2 class="display-4  text-center">Novo Cadastro</h2>
+
+<form asp-controller="Contato" asp-action="Criar" method="post">
+  <div class="form-group">
+
+    <label for="nomeContato">Nome do Contato</label>
+    <input type="text" asp-for="Nome" class="form-control" id="nomeContato" placeholder="Digite o nome do contato">
+
+    <label for="emailContato">E-mail</label>
+    <input type="email" asp-for="Email" class="form-control" id="emailContato" placeholder="Digite o email do contato">
+
+    <label for="passContato">Senha</label>
+    <input type="password" asp-for="Senha" class="form-control" id="passContato" placeholder="Digite a senha do contato">
+  
+
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+  <a class="btn btn-secondary btn-block" asp-controller="Contato" asp-action="Index">Voltar</a>
+
+</form>
+</div>
